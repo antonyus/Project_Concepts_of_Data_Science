@@ -5,8 +5,8 @@ from file_loader import load_words
 def main():
     tree = TernarySearchTree()
 
-    insert_words = load_words("data/search_trees/insert_words")
-    not_insert_words = load_words("data/search_trees/not_insert_words")
+    insert_words = load_words("data/search_trees/insert_words.txt")
+    not_insert_words = load_words("data/search_trees/not_insert_words.txt")
 
     for word in insert_words:
         tree.insert(word)
