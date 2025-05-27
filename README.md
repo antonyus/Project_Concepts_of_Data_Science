@@ -7,27 +7,32 @@ This project implements a Ternary Search Tree (TST) in Python using an object-or
 ## Project Structure
 ```
 ternary-search-tree/
-├── main.py                  # Runs insertion/search using provided data files
-├── ternary_tree.py          # TST logic (Node and TST class)
-├── file_loader.py           # Helper function to load words from file
+├── main.py # Script to insert/search words using data files
+├── ternary_tree.py # TST logic (Node and TernarySearchTree classes)
+├── file_loader.py # Utility for loading word lists from text files
+├── TernaryTree_Demo.ipynb # Jupyter notebook demo and test examples
 ├── data/
-│   └── search_trees/
-│       ├── insert_words
-│       ├── not_insert_words
-│       └── corncob_lowercase
+│ └── search_trees/
+│ ├── insert_words.txt
+│ ├── not_insert_words.txt
+│ └── corncob_lowercase.txt
 ```
 
 ## How to Run
-Make sure you are in the project directory, then run:
+
+### 🔹 From the command line:
 ```bash
+cd ternary-search-tree
 python main.py
 ```
+Open TernaryTree_Demo.ipynb in VS Code or Jupyter and run the cells to interactively test the tree.
 
 ## Files Explained
-- `main.py`: Main script to load words and test insert/search
-- `ternary_tree.py`: Contains the Ternary Search Tree implementation
-- `file_loader.py`: Loads lines from a word file
-- `data/search_trees/`: Contains your insert/test word files
+- `main.py`: Loads test word files and runs insert/search operations.
+- `ternary_tree.py`: Contains the full Ternary Search Tree implementation.
+- `file_loader.py`: Helper for reading word lists from .txt files.
+- `TernaryTree_Demo.ipynb`: Jupyter notebook to demonstrate and benchmark the tree.
+- `data/search_trees/`: Folder with input word lists for testing.
 
 ## Sample Output
 ```
